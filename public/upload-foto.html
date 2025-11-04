@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enviar Foto de Perfil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      .upload-box { max-width:420px; margin:60px auto; padding:20px; background:#fff; border-radius:8px; box-shadow:0 6px 20px rgba(0,0,0,0.08);} 
+      .preview { width:120px; height:120px; border-radius:50%; object-fit:cover; border:3px solid var(--azul-claro); display:block; margin:10px auto; }
+    </style>
+  </head>
+  <body>
+    <div class="upload-box">
+      <h2 style="text-align:center">Enviar foto de perfil</h2>
+      <img id="preview" class="preview" src="https://via.placeholder.com/120" alt="Pré-visualização">
+      <form id="uploadForm" autocomplete="off">
+        <div style="margin-bottom:10px">
+          <label for="email">Seu email (usado para encontrar seu cadastro)</label><br>
+          <input id="email" name="email" type="email" required autocomplete="off" style="width:100%; padding:8px;" />
+        </div>
+        <div style="margin-bottom:10px">
+          <label for="foto">Escolha uma imagem</label><br>
+          <input id="foto" name="foto" type="file" accept="image/*" required />
+        </div>
+        <div style="text-align:center">
+          <button type="submit" class="btn-primary">Enviar</button>
+          <a href="index.html" style="margin-left:10px">Cancelar</a>
+        </div>
+      </form>
+      <div id="msg" style="text-align:center; margin-top:12px"></div>
+    </div>
+
+    <script>
+      function getQueryParam(name) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(name) || '';
+      }
+
+      const fotoInput = document.getElementById('foto');
+      const preview = document.getElementById('preview');
+      const emailInput = document.getElementById('email');
+
+      // se email foi passado por query string, preenche e torna o campo somente leitura
+      const preEmail = getQueryParam('email');
+      if (preEmail) {
+        const decoded = decodeURIComponent(preEmail);
+        emailInput.value = decoded;
+        // impedir edição pelo usuário na UI
+        emailInput.readOnly = true;
+        emailInput.style.backgroundColor = '#f5f5f5';
+      } else {
+        // sem e-mail na query string, bloquear envio e informar
+        const msg = document.getElementById('msg');
+        msg.style.color = 'red';
+        msg.innerText = 'Nenhum email fornecido. A foto só pode ser enviada a partir do seu perfil (clique em Enviar Foto no dashboard).';
+        document.querySelector('#uploadForm button[type=submit]').disabled = true;
+      }
+
+      fotoInput.addEventListener('change', () => {
+        const f = fotoInput.files[0];
+        if (f) preview.src = URL.createObjectURL(f);
+      });
+
+      document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = document.getElementById('email').value.trim();
+        const file = fotoInput.files[0];
+        if (!email || !file) return;
+        const fd = new FormData();
+        fd.append('email', email);
+        fd.append('foto', file);
+        const msg = document.getElementById('msg');
+        msg.innerText = 'Enviando...';
+        try {
+          // Use URL absoluta do backend para evitar problemas ao abrir o HTML via file://
+          console.log('[DEBUG] Enviando upload_foto, email=', email);
+          const BACKEND = 'http://localhost:5000';
+          const res = await fetch(`${BACKEND}/upload_foto`, { method: 'POST', body: fd });
+          const data = await res.json();
+          if (res.ok) {
+            msg.style.color = 'green';
+            msg.innerText = 'Foto enviada com sucesso! Redirecionando...';
+            // redirecionar para a página de login após sucesso
+            setTimeout(() => { window.location.href = 'login.html'; }, 900);
+          } else {
+            msg.style.color = 'red';
+            msg.innerText = data.erro || data.message || JSON.stringify(data);
+          }
+        } catch (err) {
+          msg.style.color = 'red';
+          msg.innerText = err.message || 'Erro ao enviar';
+        }
+      });
+    </script>
+  </body>
+</html>

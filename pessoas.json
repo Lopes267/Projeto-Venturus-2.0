@@ -1,0 +1,34 @@
+[
+  {
+    "nome": "Enzo Lopes de Paula",
+    "email": "enzopaula05@gmail.com",
+    "tipo": "cliente",
+    "especialidade": null,
+    "senha_hash": "scrypt:32768:8:1$BfAamwkLHi1tUNn6$d4c6780eeddbeb8ec08d868ca10aa5d6435d9b13cdb36fb16a10950c4ca84529eb9797183d321ac3bd39b3eba0d2eb8db337d0b9cb646cd12972d25c1276059f",
+    "foto": null
+  },
+  {
+    "nome": "tiago de souza",
+    "email": "teste@gmail.com",
+    "tipo": "medico",
+    "especialidade": "dermatologista",
+    "senha_hash": "pbkdf2:sha256:1000000$iFuQuHlglQK4VHgG$11b67083e932675580614ff16d8d59fc9f4db3986b12f188b54a554ea99e959d",
+    "foto": null
+  },
+  {
+    "nome": "teste",
+    "email": "teste2@gmail.com",
+    "tipo": "medico",
+    "especialidade": "medicina",
+    "senha_hash": "pbkdf2:sha256:1000000$VuebkzQ0gtons7hE$5cc4c5485d8d87b4d3580f2cd43106693006020b16c0c926fab8c04d827a0187",
+    "foto": "/uploads/f8aad76fed7142199b3c4b9ab9c503fe.png"
+  },
+  {
+    "nome": "Enzo",
+    "email": "teste3@gmail.com",
+    "tipo": "cliente",
+    "especialidade": null,
+    "senha_hash": "pbkdf2:sha256:1000000$q7KLEZNTQnpM0v0G$138067f76cfb3482e1cddc4252a497e6e264fe914c893d174add05d21936c22c",
+    "foto": "/uploads/1420002013fa46eba732afb833aff589.png"
+  }
+]

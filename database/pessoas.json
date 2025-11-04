@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Enzo Lopes de Paula",
+    "email": "enzopaula05@gmail.com",
+    "tipo": "cliente",
+    "especialidade": null,
+    "senha_hash": "scrypt:32768:8:1$BfAamwkLHi1tUNn6$d4c6780eeddbeb8ec08d868ca10aa5d6435d9b13cdb36fb16a10950c4ca84529eb9797183d321ac3bd39b3eba0d2eb8db337d0b9cb646cd12972d25c1276059f",
+    "foto": null
+  },
+  {
+    "nome": "tiago de souza",
+    "email": "teste@gmail.com",
+    "tipo": "medico",
+    "especialidade": "dermatologista",
+    "senha_hash": "pbkdf2:sha256:1000000$iFuQuHlglQK4VHgG$11b67083e932675580614ff16d8d59fc9f4db3986b12f188b54a554ea99e959d",
+    "foto": null
+  },
+  {
+    "nome": "teste",
+    "email": "teste5@gmail.com",
+    "tipo": "medico",
+    "especialidade": "teste",
+    "senha_hash": "pbkdf2:sha256:1000000$JqmVLOW5wgkq17tJ$0ab24f90670849c0bebdd61db8a11d2b17b277df9f7b96afb79da8868a20d76c",
+    "foto": "/uploads/bf8ca3a525ce4babb4e817d43fc3b8cf.png"
+  },
+  {
+    "nome": "teste",
+    "email": "teste6@gmail.com",
+    "tipo": "cliente",
+    "especialidade": null,
+    "senha_hash": "pbkdf2:sha256:1000000$vBvAFPEYTEzh4A1c$16e609ababadf6f9f1b564f1de9a458f245f324413daaf1f54a06d6c5e50f43e",
+    "foto": "/uploads/48bb8cef3f784cb2997866b7b2c02af6.png"
+  },
+  {
+    "nome": "teste",
+    "email": "teste3@gmail.com",
+    "tipo": "cliente",
+    "especialidade": null,
+    "senha_hash": "pbkdf2:sha256:1000000$e9aFJI0Po5MkQWgc$d99bf41c45e22bfdbec2e0c11d3494b574ba431ca8368fb5e4adda69efeda642",
+    "foto": "/uploads/16d91121821947c6ba80bc9e9078fe44.png"
+  },
+  {
+    "nome": "teste",
+    "email": "teste2@gmail.com",
+    "tipo": "cliente",
+    "especialidade": null,
+    "senha_hash": "pbkdf2:sha256:1000000$nC7WQH0SHLkpLK8B$b3e5686c4e0910bc9e3d69c8d9238b0f88c7595c348bad50d8287b693efc724f",
+    "foto": "/uploads/90f11cb5370f4b51b947e33db49f9037.png"
+  }
+]
