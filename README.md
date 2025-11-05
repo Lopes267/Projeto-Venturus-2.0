@@ -16,3 +16,5 @@ Flask_cors
 werkzeug
 Em Servidor Local o o Python deve ser ativado em segundo plano em modo de servidor pelo cmd, para linkar o banco de dados ao resto do projeto
 
+![Logo da Empresa]([public/](https://raw.githubusercontent.com/Lopes267/Projeto-Venturus-2.0/main/public/logo.png)
+
