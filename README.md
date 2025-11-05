@@ -12,7 +12,7 @@
     <tr>
       <td align="center"
         <sub><b>Enzo Lopes de Paula</b></sub><br />
-        <a href="https://github.com/enzolopes">
+        <a href="https://github.com/Lopes267">
           <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
         </a>
         <a href="mailto:enzopaula05@email.com">
