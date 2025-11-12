@@ -1,6 +1,6 @@
 <div align="center">
-  ![Banner](public/logo.png)
-  <img src="https://via.placeholder.com/1200x300/4A90E2/ffffff?text=Kenko+Convênio+Médico" alt="Banner Kenko" width="100%"/>
+<img src="(https://github.com/Lopes267/Projeto-Venturus-2.0/blob/7e3c842f89a590d1b8ab7ed4d38c6a4d25dc446a/public/logo.png)"/>
+  
   <p><strong>Facilitando o acesso aos cuidados com a saúde</strong></p>
 </div>
 
