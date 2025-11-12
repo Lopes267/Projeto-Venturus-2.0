@@ -68,13 +68,8 @@ Com isso melhoraremos a experiência do paciente e do doutor.
 
 <div align="center">
 
-  <a href="https://www.youtube.com/watch?v=uK6awKJu0uk">
+  <a href="https://www.youtube.com/watch?v=uK6awKJu0uk">     <img src="https://github.com/Lopes267/Projeto-Venturus-2.0/blob/7e3c842f89a590d1b8ab7ed4d38c6a4d25dc446a/public/logo.png" width = "60%"/>   </a>   <p><em>Clique na imagem acima para assistir ao vídeo de demonstração completo</em></p>
 
-  <a [href="https://www.youtube.com/watch?v=uK6awKJu0uk"]("https://github.com/Lopes267/Projeto-Venturus-2.0/blob/7e3c842f89a590d1b8ab7ed4d38c6a4d25dc446a/public/logo.png")">
-
-    
-  </a>
-  <p><em>Clique na imagem acima para assistir ao vídeo de demonstração completo</em></p>
 </div>
 
 <div align="center">
