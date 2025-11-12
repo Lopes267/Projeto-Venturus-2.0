@@ -70,9 +70,9 @@ Com isso melhoraremos a experiência do paciente e do doutor.
 
   <a href="https://www.youtube.com/watch?v=uK6awKJu0uk">
 
-  <a [href="https://www.youtube.com/watch?v=VIDEO_ID](https://www.youtube.com/watch?v=uK6awKJu0uk)">
+  <a [href="https://www.youtube.com/watch?v=VIDEO_ID]("https://github.com/Lopes267/Projeto-Venturus-2.0/blob/7e3c842f89a590d1b8ab7ed4d38c6a4d25dc446a/public/logo.png")">
 
-    <img src="(https://www.youtube.com/watch?v=uK6awKJu0uk)" alt="Vídeo de Demonstração" width="70%"/>
+    
   </a>
   <p><em>Clique na imagem acima para assistir ao vídeo de demonstração completo</em></p>
 </div>
