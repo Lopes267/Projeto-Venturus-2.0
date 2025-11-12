@@ -101,11 +101,14 @@ header:hover {
 
 
 main.container {
-    background-color: var(--azul-claro) !important;
     padding: 3rem !important;
-    
     margin-top: 30px !important;
     margin-bottom: 30px !important;
+}
+
+/* Fundo azul apenas para os dashboards */
+.dashboard-page main.container {
+    background-color: var(--azul-claro) !important;
 }
 
 .main-card {
@@ -254,11 +257,18 @@ main.container {
 }
 
 .form-login {
-    width: 600px;
-    max-width: 900px;
-    padding: 15px;
-    margin: auto;
-    margin-top: 100px;
+    margin-top: 2rem;
+}
+
+.form-login .card {
+    border-radius: 15px;
+    background-color: var(--branco);
+}
+
+.form-login .btn-primary {
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 8px;
 }
 
 .logo{
@@ -281,4 +291,116 @@ main.container {
 
 .sn{
     font-size: 17.5px;
+}
+
+/* Modo escuro: override de variáveis quando body tem a classe .dark-mode */
+.dark-mode {
+    --amarelo: #1f2937; /* navbar background no escuro */
+    --azul-claro: #0b77d1; /* destaque */
+    --cinza-claro: #0b1220; /* fundo principal */
+    --cinza-escuro: #1f2937;
+    --preto: #ffffff; /* texto claro */
+    --branco: #0b0f13; /* fundo de cards */
+    --verde-sucesso: #2dd4bf;
+    --vermelho-erro: #f87171;
+}
+
+/* pequenas transições para suavizar a troca de tema */
+body, .card, header, main.container {
+    transition: background-color 250ms ease, color 250ms ease, border-color 250ms ease;
+}
+
+/* Estilos para o botão de alternância flutuante do modo escuro */
+#darkModeFloating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* provide a slightly larger clickable/tap area around the button */
+    padding: 8px;
+}
+
+/* Larger circular toggle for easier tapping */
+#darkModeToggle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+    background: var(--amarelo);
+    color: var(--preto);
+    /* make touch target larger on mobile */
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Ajuste de contraste quando em dark-mode */
+.dark-mode #darkModeToggle {
+    background: var(--cinza-escuro);
+    color: var(--preto);
+}
+
+/* Forçar cor do texto em modo escuro para garantir legibilidade */
+.dark-mode {
+    color: var(--preto) !important;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6,
+.dark-mode p, .dark-mode li, .dark-mode a, .dark-mode span, .dark-mode label,
+.dark-mode .card-title, .dark-mode .card-text, .dark-mode .nav-link, .dark-mode th, .dark-mode td {
+    color: var(--preto) !important;
+}
+
+/* garantir links e ícones na navbar fiquem visíveis */
+.dark-mode .navbar, .dark-mode .navbar-brand, .dark-mode .nav-link {
+    color: var(--preto) !important;
+}
+
+/* ajustar cores específicas que antes usavam tons de cinza escuro */
+.dark-mode .lead, .dark-mode .text-muted {
+    color: rgba(255,255,255,0.85) !important;
+}
+
+/* tabelas/boards */
+.dark-mode table, .dark-mode thead, .dark-mode tbody {
+    color: var(--preto) !important;
+}
+
+/* Exceção: páginas de autenticação (login, cadastro) devem manter texto preto mesmo em dark-mode */
+.dark-mode.auth-page,
+.dark-mode.auth-page h1, .dark-mode.auth-page h2, .dark-mode.auth-page h3,
+.dark-mode.auth-page h4, .dark-mode.auth-page h5, .dark-mode.auth-page h6,
+.dark-mode.auth-page p, .dark-mode.auth-page li, .dark-mode.auth-page a,
+.dark-mode.auth-page span, .dark-mode.auth-page label, .dark-mode.auth-page .card,
+.dark-mode.auth-page .card-title, .dark-mode.auth-page .card-text {
+    color: #000000 !important;
+}
+
+/* garantir que os inputs e o fundo do card de autenticação mantenham boa legibilidade */
+.dark-mode.auth-page .card {
+    background: #ffffff !important;
+    color: #000000 !important;
+}
+.dark-mode.auth-page input, .dark-mode.auth-page .form-control {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: rgba(0,0,0,0.12) !important;
+}
+/* overlay already styled inline in JS but você pode ajustar aqui */
+
+
+/* quando estiver ativo, você pode destacar o texto sob o cursor (opcional) */
+.text-magnifier-active *::selection { background: rgba(255,255,0,0.25); }
+/* Correção para o cursor mudar quando a lupa estiver ativa */
+.text-magnifier-active * {
+    /* Força o cursor a ser o padrão para todos os elementos
+    quando a lupa está ligada. */
+    cursor: default !important;
+}
+
+/* Opcional: Para o botão de alternância */
+#textMagnifierOverlayToggle {
+    cursor: pointer !important; /* Certifica-se de que o botão ainda possa ser clicado */
 }

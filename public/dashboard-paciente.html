@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="dashboard-page">
 
     <header class="navbar navbar-expand-lg">
         <div class="container-fluid px-5">
@@ -27,8 +27,11 @@
                     <li class="nav-item"><a class="nav-link fs-5" href="agendar-consulta.html">Agendar Consulta</a></li>
                 </ul>
             </div>
-            <img id="user-profile-pic" class="rounded-circle" src="https://via.placeholder.com/50"
-                alt="Foto de perfil do usuário">
+            <div class="d-flex align-items-center gap-3">
+                <img id="user-profile-pic" class="rounded-circle" src="https://via.placeholder.com/50"
+                    alt="Foto de perfil do usuário">
+                <button onclick="logout()" class="btn btn-outline-danger">Sair</button>
+            </div>
         </div>
     </header>
 
@@ -48,6 +51,8 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/auth-nav.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
     function getQueryParam(name) {
@@ -109,7 +114,7 @@
 </script>
 
 
-
+<script src="assets/js/magnifier-overlay.js"></script>
 </body>
 
 </html>
