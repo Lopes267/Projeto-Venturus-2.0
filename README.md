@@ -1,5 +1,5 @@
 <div align="center">
-<img src="(https://github.com/Lopes267/Projeto-Venturus-2.0/blob/7e3c842f89a590d1b8ab7ed4d38c6a4d25dc446a/public/logo.png)"/>
+<img src="https://github.com/Lopes267/Projeto-Venturus-2.0/blob/7e3c842f89a590d1b8ab7ed4d38c6a4d25dc446a/public/logo.png"/>
   
   <p><strong>Facilitando o acesso aos cuidados com a saúde</strong></p>
 </div>
