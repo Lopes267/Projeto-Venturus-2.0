@@ -1,5 +1,5 @@
 <div align="center">
-  ![Banner]([public/logo.png](https://github.com/Lopes267/Projeto-Venturus-2.0/blob/cfcad44b1ec357cfc123269b3080b91c346ea0d9/public/logo.png))
+  ![Banner](https://github.com/Lopes267/Projeto-Venturus-2.0/blob/cfcad44b1ec357cfc123269b3080b91c346ea0d9/public/logo.png)
   <img src="https://via.placeholder.com/1200x300/4A90E2/ffffff?text=Kenko+Convênio+Médico" alt="Banner Kenko" width="100%"/>
   <p><strong>Facilitando o acesso aos cuidados com a saúde</strong></p>
 </div>
