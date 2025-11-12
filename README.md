@@ -1,4 +1,5 @@
 <div align="center">
+  ![Banner](public/logo.png)
   <img src="https://via.placeholder.com/1200x300/4A90E2/ffffff?text=Kenko+Convênio+Médico" alt="Banner Kenko" width="100%"/>
   <p><strong>Facilitando o acesso aos cuidados com a saúde</strong></p>
 </div>
