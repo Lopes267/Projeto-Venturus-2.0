@@ -70,7 +70,7 @@ Com isso melhoraremos a experiência do paciente e do doutor.
 
   <a href="https://www.youtube.com/watch?v=uK6awKJu0uk">
 
-  <a href="https://www.youtube.com/watch?v=VIDEO_ID">
+  <a [href="https://www.youtube.com/watch?v=VIDEO_ID](https://www.youtube.com/watch?v=uK6awKJu0uk)">
 
     <img src="https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg" alt="Vídeo de Demonstração" width="70%"/>
   </a>
