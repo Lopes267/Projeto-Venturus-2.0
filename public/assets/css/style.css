@@ -48,7 +48,7 @@ header {
 
 header:hover {
     height: 150px;
-    
+    transition: height 0.45s ease;
 }
 
 .navbar {
