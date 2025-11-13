@@ -73,8 +73,8 @@ Com isso melhoraremos a experiência do paciente e do doutor.
 </div>
 
 <div align="center">
-  <img src="https://via.placeholder.com/800x400/28a745/ffffff?text=Tela+de+Login" alt="Tela de Login" width="80%"/>
-  <p><em>Tela de Login e Cadastro</em></p>
+  <img src="https://github.com/Lopes267/Projeto-Venturus-2.0/blob/afdca288b8678ef6972045dee7a0795419cd7f2d/Png/Tela%20de%20Login.png"  width="80%"/>
+  <p><em>Tela de Login</em></p>
   <br/>
   <img src="https://via.placeholder.com/800x400/17a2b8/ffffff?text=Dashboard+de+Consultas" alt="Dashboard" width="80%"/>
   <p><em>Dashboard com Agendamento de Consultas</em></p>
