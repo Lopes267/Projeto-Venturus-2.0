@@ -46,5 +46,12 @@
     "especialidade": null,
     "senha_hash": "pbkdf2:sha256:1000000$nC7WQH0SHLkpLK8B$b3e5686c4e0910bc9e3d69c8d9238b0f88c7595c348bad50d8287b693efc724f",
     "foto": "/uploads/90f11cb5370f4b51b947e33db49f9037.png"
+  },
+  {
+    "nome": "Enzo",
+    "email": "teste7@gmail.com",
+    "tipo": "cliente",
+    "especialidade": null,
+    "senha_hash": "pbkdf2:sha256:1000000$6jGM2BnpjquPsfqk$0585fe31226b5e52c337630c742a1e6817f84dbb72d436653a6eaa9db0cb0314"
   }
 ]
